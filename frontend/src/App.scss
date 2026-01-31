@@ -1,0 +1,36 @@
+.bill-divider {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  &__header {
+    padding: 20px;
+    border-bottom: 1px solid black;
+    background-color: #1a1a1a;
+
+    &__heading {
+      text-align: center;
+    }
+  }
+
+  &__body {
+    flex-grow: 1;
+    display: flex;
+    height: calc(100vh - 73px);
+
+    &__left-section {
+      height: 100%;
+      width: 75%;
+      border-right: 2px solid rgb(89, 89, 89);
+      padding: 20px;
+    }
+
+    &__right-section {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+    }
+  }
+}
